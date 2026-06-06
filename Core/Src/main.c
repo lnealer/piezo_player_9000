@@ -103,7 +103,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_WritePin(GPIOA, 5, GPIO_PIN_SET);
 	 loop();
   }
   /* USER CODE END 3 */

@@ -18,11 +18,10 @@ buttonState cur_button_state;
 std::stack<buttonState> button_st;
 
 enum note note_arr[] = {C, A, F, C, D, E, F, D, F, C};
-int32_t time_arr[] = {1000, 1000, 1000, 1000, 500, 500, 500, 1000, 500, 1500};//{NOTE_E, NOTE_C, NOTE_A, NOTE_F, NOTE_G, NOTE_A, NOTE_B, NOTE_G, NOTE_B, NOTE_F};
+int32_t time_arr[] = {1000, 1000, 1000, 1000, 500, 500, 500, 1000, 500, 1500};
 int length = sizeof(note_arr) / sizeof(note_arr[0]);
 
 int  handle_button_trigger() {
-//	stack<buttonState> button_st;
 	if (button_st.empty()) {
 		return 0;
 	}
@@ -90,10 +89,6 @@ void play_tune() {
 
 void loop() {
 
-
-//	  HAL_GPIO_WritePin(GPIOA, 5, GPIO_PIN_RESET);
-	  HAL_GPIO_WritePin(GPIOA, 5, GPIO_PIN_SET);
-
 	 if(HAL_GPIO_ReadPin (GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET) {
 		 play_tune();
 		 return;
@@ -117,15 +112,9 @@ void loop() {
 
 }
 
-void setup() {
-
-}
-
-
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-//  static uint32_t last_trigger_time = 0;
   if(GPIO_Pin == GPIO_PIN_1) {
 
 	  buttonState curr_button_state;
@@ -134,7 +123,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	  curr_button_state.note = C;
 	  button_st.push(curr_button_state);
   }
-  if(GPIO_Pin == GPIO_PIN_4) {
+  else if(GPIO_Pin == GPIO_PIN_4) {
 
 	  buttonState curr_button_state;
 	  curr_button_state.pin = GPIO_Pin;
@@ -142,7 +131,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	  curr_button_state.note = D;
 	  button_st.push(curr_button_state);
   }
-  if(GPIO_Pin == GPIO_PIN_5) {
+  else if(GPIO_Pin == GPIO_PIN_5) {
 
 	  buttonState curr_button_state;
 	  curr_button_state.pin = GPIO_Pin;
@@ -150,36 +139,28 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	  curr_button_state.note = E;
 	  button_st.push(curr_button_state);
   }
-
-  // f g a b
-  if(GPIO_Pin == GPIO_PIN_6) {
-
+  else if(GPIO_Pin == GPIO_PIN_6) {
 	  buttonState curr_button_state;
 	  curr_button_state.pin = GPIO_Pin;
 	  curr_button_state.port = GPIOA;
 	  curr_button_state.note = F;
 	  button_st.push(curr_button_state);
   }
-
-  if(GPIO_Pin == GPIO_PIN_7) {
-
+  else if(GPIO_Pin == GPIO_PIN_7) {
 	  buttonState curr_button_state;
 	  curr_button_state.pin = GPIO_Pin;
 	  curr_button_state.port = GPIOA;
 	  curr_button_state.note = G;
 	  button_st.push(curr_button_state);
   }
-
-  if(GPIO_Pin == GPIO_PIN_8) {
-
+  else if(GPIO_Pin == GPIO_PIN_8) {
 	  buttonState curr_button_state;
 	  curr_button_state.pin = GPIO_Pin;
 	  curr_button_state.port = GPIOA;
 	  curr_button_state.note = A;
 	  button_st.push(curr_button_state);
   }
-
-  if(GPIO_Pin == GPIO_PIN_9) {
+  else if(GPIO_Pin == GPIO_PIN_9) {
 
 	  buttonState curr_button_state;
 	  curr_button_state.pin = GPIO_Pin;
