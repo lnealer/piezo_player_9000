@@ -1,11 +1,10 @@
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/new:174:33:void* operator new(std::size_t, void*)	1
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_deque.h:96:3:constexpr std::size_t std::__deque_buf_size(size_t)	2
-../Core/Src/player.cpp:24:6:int handle_button_trigger()	7
-../Core/Src/player.cpp:62:9:int32_t get_arr(note)	9
-../Core/Src/player.cpp:75:6:void play_tune()	2
-../Core/Src/player.cpp:91:6:void loop()	4
-../Core/Src/player.cpp:120:6:void setup()	1
-../Core/Src/player.cpp:126:6:void HAL_GPIO_EXTI_Callback(uint16_t)	8
+../Core/Src/player.cpp:23:6:int handle_button_trigger()	7
+../Core/Src/player.cpp:60:9:int32_t get_arr(note)	9
+../Core/Src/player.cpp:73:6:void play_tune()	2
+../Core/Src/player.cpp:89:6:void loop()	4
+../Core/Src/player.cpp:115:6:void HAL_GPIO_EXTI_Callback(uint16_t)	8
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_deque.h:855:7:std::deque<_Tp, _Alloc>::deque() [with _Tp = buttonState; _Alloc = std::allocator<buttonState>]	1
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_stack.h:162:2:std::stack<_Tp, _Sequence>::stack() [with _Seq = std::deque<buttonState, std::allocator<buttonState> >; _Requires = void; _Tp = buttonState; _Sequence = std::deque<buttonState, std::allocator<buttonState> >]	1
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_stack.h:217:7:bool std::stack<_Tp, _Sequence>::empty() const [with _Tp = buttonState; _Sequence = std::deque<buttonState, std::allocator<buttonState> >]	1
@@ -91,6 +90,6 @@ C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.external
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_algobase.h:420:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = buttonState*; bool _IsMove = false]	2
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_algobase.h:731:2:static _Tp* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(const _Tp*, const _Tp*, _Tp*) [with _Tp = buttonState*; bool _IsMove = false]	2
 C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/bits/stl_stack.h:99:11:std::stack<buttonState>::~stack()	1
-../Core/Src/player.cpp:190:1:void __static_initialization_and_destruction_0(int, int)	5
-../Core/Src/player.cpp:190:1:cpp)	1
-../Core/Src/player.cpp:190:1:cpp)	1
+../Core/Src/player.cpp:170:1:void __static_initialization_and_destruction_0(int, int)	5
+../Core/Src/player.cpp:170:1:cpp)	1
+../Core/Src/player.cpp:170:1:cpp)	1

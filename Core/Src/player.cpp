@@ -12,7 +12,6 @@
 #include <optional>
 
 uint32_t button_push_detected_time = 0;
-uint32_t last_trigger_time = 0;
 int j = 0;
 buttonState cur_button_state;
 std::stack<buttonState> button_st;
@@ -41,6 +40,7 @@ int  handle_button_trigger() {
 			button_st.pop(); // remove the element after it's no longer pushed
 			return 0;
 		}
+		return 1;
 	}
 
 	// if the button is still pushed after 10 ticks, button is stable
