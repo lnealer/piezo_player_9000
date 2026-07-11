@@ -4,10 +4,10 @@ Piezo piano using a passive piezoelectric buzzer and tactile buttons on a Nucleo
 ## Implementation
 ### Requirements
 The piano needs to be able to play the most recently pressed note, even if other keys are pressed. When the user releases a key, the next note played should be next key in reverse chronological order. i.e.:
-User holds down A,G, and E (in that order)
-The note played is E
-User releases G and E
-The note played is A
+* User holds down A,G, and E (in that order)
+* The note played is E
+* User releases G and E
+* The note played is A
 
 ### Solution
 The piano is implemented using a stack to track pressed keys. This allows the piano to always play the most recently pressed key while maintaining the order of previously pressed keys. Button presses trigger hardware interrupts which update the stack.
