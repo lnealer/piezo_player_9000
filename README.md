@@ -4,3 +4,5 @@ Piezo piano using a passive piezoelectric buzzer and tactile buttons on a Nucleo
 ## Demo 
 [![Watch the video](https://img.youtube.com/vi/_WzDCoJYSG8/0.jpg)](https://youtu.be/_WzDCoJYSG8)
 
+## Learnings
+PWM signals, button debouncing, PU and PD resistors
