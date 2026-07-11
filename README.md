@@ -17,7 +17,7 @@ The piano is implemented using a stack to track pressed keys. This allows the pi
 
 ## Future Work
 ### Chords
-A limitation of the current implementation is that it can only sound a single note at a time. i.e. it cannot player musical chords.
+A limitation of the current implementation is that it can only sound a single note at a time. i.e. it cannot play musical chords.
 
 A piezo buzzer is an amplifier for electric signals, in this case a PWM signal produced by the MCU. The MCU produces musical notes by generating a PWM signal of the correct frequency. In a normal piano, playing multiple notes simultaneously causes constructive and destructive interence in the waveforms. This produces a complex and (critically) non-uniform waveform which corresponds to a chord. 
 
