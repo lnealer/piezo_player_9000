@@ -1,4 +1,3 @@
-<img width="604" height="434" alt="chord_waveforms" src="https://github.com/user-attachments/assets/72ab9f25-b758-4e30-98e8-f321158b119b" />
 # piezo_player_9000
 Piezo piano using a passive piezoelectric buzzer and tactile buttons on a Nucleo STM F103RB board.
 
@@ -22,7 +21,7 @@ A limitation of the current implementation is that it can only sound a single no
 
 A piezo buzzer is an amplifier for electric signals, in this case a PWM signal produced by the MCU. The MCU produces musical notes by generating a PWM signal of the correct frequency. In a normal piano, playing multiple notes simultaneously causes constructive and destructive interence in the waveforms. This produces a complex and (critically) non-uniform waveform which corresponds to a chord. 
 
-<img width="604" height="434" alt="chord_waveforms" src="https://github.com/user-attachments/assets/49036311-f0e9-4da3-8ca0-5391bdb803a8" />
+<img width="455" height="326" alt="chord_waveforms" src="https://github.com/user-attachments/assets/49036311-f0e9-4da3-8ca0-5391bdb803a8" />
 
 A single piezo buzzer will amplify any signal it receives, so the player could play chords if the MCU could produce an accurate chord waveform. The challenge would be to determine the appropriate waveform and manipulate the clock in order to produce the appropriate signal. Another approach is to add multiple piezo buzzers to the player. The player could read keys off the stack up to the number of buzzers. With this approach the work of producing the chord waveform is offloaded onto physics. 
 
